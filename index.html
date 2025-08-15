@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Input Validation</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body, html {
+            height: 100%;
+            overflow: hidden;
+        }
+
+        .nin-form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            max-width: 100%;
+            padding: 10px;
+        }
+
+        input {
+            width: 100%;
+            max-width: 300px;
+            height: 35px;
+            border-radius: 4px;
+            border: 1px solid #ddd;
+            padding: 5px 15px;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <section class="nin-form">
+            <label for="nin">NIN: </label>
+            <input type="text" name="nin" id="nin" placeholder="Enter your NIN" pattern="[a-zA-Z0-9]+" required>
+        </section>
+    </form>
+</body>
+</html>
